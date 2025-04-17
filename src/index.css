@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 32 42% 97%;
+    --foreground: 20 33% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 33% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 33% 15%;
+
+    --primary: 28 45% 34%;
+    --primary-foreground: 40 24% 96%;
+
+    --secondary: 120 32% 28%;
+    --secondary-foreground: 40 24% 96%;
+
+    --muted: 30 10% 92%;
+    --muted-foreground: 25 5% 45%;
+
+    --accent: 28 80% 56%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 20 14% 85%;
+    --input: 20 14% 85%;
+    --ring: 25 30% 50%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  .tupi-pattern-bg {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%233A7CA5' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+@layer components {
+  .tupi-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-tupi-earth mb-6;
+  }
+  
+  .section-subtitle {
+    @apply text-xl md:text-2xl font-medium text-tupi-forest mb-12;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+}
